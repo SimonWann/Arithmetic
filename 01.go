@@ -41,18 +41,22 @@ func main() {
 	var arr []int = []int{
 		5, 8, 1, 3, 0, 9, 5,
 	}
-	var heap *Heap = &Heap{
-		Arr: arr,
+	arr2 := []int{
+		12, 9, 6, 2, 32, 35, 23,
 	}
-	heap.Init()
-	fmt.Println(heap.Arr, heap.HeapSize)
-	heap.Add(100)
-	fmt.Println(heap.Arr, heap.HeapSize)
+	// var heap *Heap = &Heap{
+	// 	Arr: arr,
+	// }
+	// heap.Init()
+	// fmt.Println(heap.Arr, heap.HeapSize)
+	// heap.Add(100)
+	// fmt.Println(heap.Arr, heap.HeapSize)
 	// heap.Heapify(heap.Arr, 0, len(heap.Arr)-1)
 	// fmt.Println(heap.Arr, heap.HeapSize)
-	heap.sort()
-	fmt.Println(heap.Arr, heap.HeapSize)
-
+	// heap.sort()
+	// fmt.Println(heap.Arr, heap.HeapSize)
+	baseSort(arr, 1, 0, 6)
+	fmt.Println(arr2)
 }
 
 func searchComposer(v int, k int, origin []int) int {
